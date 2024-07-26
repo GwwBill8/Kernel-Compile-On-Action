@@ -11,7 +11,7 @@ on:
       main:
         description: "kernel主版本,一定要真实存在，否则无法编译"
         required: true
-        default: v5.x
+        default: v6.x
         type: choice
         options:
         - v1.0
@@ -33,10 +33,10 @@ on:
       version:
         description: "kernel版本，应与主版本对应"
         required: true
-        default: "5.15.63"
+        default: "6.10.1"
         type: choice
-          - 5.16.63
-          - 5.16.62
+          - 6.9.8
+          - 6.10.1
 
 jobs:
   build:
